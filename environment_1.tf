@@ -10,10 +10,11 @@ resource "google_composer_environment" "tf_created" {
   config {
     software_config {
         image_version = "composer-2.0.22-airflow-2.2.5"
-    }
     
-    env_variables = {
-        ENVIRONMENT_CODE_SCRIPT = "https://github.com/filipknapik/composer_test_env/blob/main/environment_1.tf"
+        env_variables = {
+            ENVIRONMENT_CODE_SCRIPT = "https://github.com/filipknapik/composer_test_env/blob/main/environment_1.tf"
+        }
+        
     }
   }
 
