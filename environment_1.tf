@@ -1,5 +1,5 @@
 provider "google" {
-  project = "*************"
+  project = "filipsdirtytests4"
   region = "us-central1"
 }
 
@@ -15,6 +15,7 @@ resource "google_composer_environment" "tf_created" {
     env_variables = {
         ENVIRONMENT_CODE_SCRIPT = "https://github.com/filipknapik/composer_test_env/blob/main/environment_1.tf"
     }
+  }
 
   
 }
